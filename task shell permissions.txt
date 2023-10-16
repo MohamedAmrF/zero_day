@@ -1,0 +1,26 @@
+./solver 1-iam_betty "su betty"
+./solver 2-groups "groups"
+./solver 3-new_owner "chown betty hello"
+./solver 4-empty "touch hello"
+./solver 5-execute "chmod u+x hello"
+./solver 6-multiple_permissions "chmod ug+x,o+r hello"
+./solver 7-everybody "chmod ugo+x hello"
+
+./solver 8-James_Bond "chmod 007 hello"
+
+./solver 9-John_Doe "chmod 753 hello"
+
+./solver 10-mirror_permissions "chmod --reference=olleh hello"
+
+./solver 11-directories_permissions "chmod ugo+x */"
+
+./solver 12-directory_permissions "mkdir -m 751 my_dir"
+./solver 13-change_group "chgrp school hello"
+
+./solver 100-change_owner_and_group "vincent:staff"
+
+./solver 101-symbolic_link_permissions "chown vincent:staff _hello"
+
+./solver 102-if_only "chown --from=guillaume betty hello"
+
+./solver 103-Star_Wars "telnet towel.blinkenlights.nl"
